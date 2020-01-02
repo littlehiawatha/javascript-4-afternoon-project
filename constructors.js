@@ -40,9 +40,11 @@ function Employee(name, email, hireDate) {
   
   // Code here
   
-  
+//new Employee('Bob', 'bob@gmail.com', '01-02-98') = bob
 
-  ////////// PROBLEM 3 //////////
+const bob = new Employee('Bob', 'bob@gmail.com', '01-02-98') 
+
+////////// PROBLEM 3 //////////
   
   // Do not edit the code below.
   
@@ -64,6 +66,43 @@ function Employee(name, email, hireDate) {
   */
   
   // Code here
+
+function Car(make, model, year){
+  this.make = make
+  this.model = model
+  this.year = year
+  this.move = 0
+
+  this.moveCar= function(){
+    
+    // this.move = this.move + 10;
+    return (this.move += 10);
+}
+
+
+  //---practice trial and error----
+
+  // the following to brackets pass the test but don't function practically
+
+  // function Car(make, model, year, move){
+  //   this.make = make
+  //   this.model = model
+  //   this.year = year
+  //   this.move = move
+  
+  //   this.moveCar= function(){
+  //     let move = 0
+  //     // this.move = this.move + 10;
+  //     return (move += 10);
+  // }
+  
+
+  // this.move(0)
+  // function moveCar
+
+  // this.moveCar= function(){
+  //   this.move = this.move + 10
+  }
   
   ////////// PROBLEM 4 //////////
   
