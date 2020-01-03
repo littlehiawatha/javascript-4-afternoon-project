@@ -108,7 +108,7 @@ function Car(make, model, year){
   
   /*
     Here we have a constructor function named Movie that takes in 3 parameters:
-      name (a string), genre (a string), and rating (a number withing 1-100 that has been averaged out from previous given ratings).
+      name (a string), genre (a string), and rating (a number within 1-100 that has been averaged out from previous given ratings).
     Write a prototype method for the Movie constructor function called changeRating.
     This method should take in a number as a parameter that will be a new rating.
     Find the average between the old rating and the new rating.
@@ -122,6 +122,14 @@ function Car(make, model, year){
   }
   
   // Code here
+
+  Movie.prototype.changeRating = function(num){
+    let avg = (num + this.rating) /2
+    this.rating = avg
+    return this.rating
+  }
+
+
   
   ////////// PROBLEM 5 //////////
   
@@ -130,6 +138,24 @@ function Car(make, model, year){
   // Once the User constructor function is created, write a prototype method for the User function. Name this method addSavedPost. It should take in three parameters: id (a number), title (a string) and rating (a number). Use these parameters to create a new object and add it to the savedPosts array. Make sure to name the properties the same as described previously (id, title, rating).
   
   // Code here
+
+  function User(name, age, email, savedPosts){
+    this.name = name;
+    this.age = age;
+    this.email = email;
+    this.savedPosts = savedPosts;
+  }
+User.prototype.addSavedPost= function (id, title, rating){
+let obj = savedPosts{
+this.id = id
+this.title = title
+this.rating = rating
+
+//return this.savedPosts.push 
+
+}
+}
+
   
   ////////// PROBLEM 6 //////////
   
